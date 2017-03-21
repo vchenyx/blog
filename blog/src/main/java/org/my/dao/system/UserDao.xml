@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.my.dao.system.UserDao">
+	<select id="selectUser" resultType="org.my.pojo.UserPojo">
+		select id, name, pwd, phone, email from user
+	</select>
+	<insert id="insertUser" parameterType="org.my.pojo.UserPojo">
+		insert into user (name, pwd, phone, email)
+		values (#{name}, #{pwd}, #{phone}, #{email})
+	</insert>
+</mapper>
