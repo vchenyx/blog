@@ -1,4 +1,4 @@
-package org.my.common.aspect;
+package org.my.common.aspect.log;
 
 import org.apache.log4j.Logger;
 import org.aspectj.lang.JoinPoint;
