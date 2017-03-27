@@ -133,6 +133,12 @@
 		    <version>1.2.16</version>
 		</dependency>
 		
+		<!-- guava -->
+		<dependency>
+		    <groupId>com.google.guava</groupId>
+		    <artifactId>guava</artifactId>
+		    <version>19.0</version>
+		</dependency>
 		
 		<!-- Dubbo Jar包引入 -->
         <!-- <dependency>

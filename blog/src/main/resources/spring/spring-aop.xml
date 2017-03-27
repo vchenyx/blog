@@ -10,7 +10,6 @@
 
 	<!-- 把切面类交由Spring容器来管理 -->
     <bean id="logAspect" class="org.my.common.aspect.log.LogAspect"/>
-    <bean id="cacheAspect" class="org.my.common.aspect.cache.CacheAspect"/>
 	<!-- 启用spring对AspectJ注解的支持 -->  
     <aop:aspectj-autoproxy/>
 	

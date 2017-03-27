@@ -7,6 +7,7 @@ import org.my.dao.system.UserDao;
 import org.my.pojo.UserPojo;
 import org.my.service.system.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -17,6 +18,7 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserDao userDao;
 	
+	@Cacheable("selectUser")
 	public List<UserPojo> selectUser() {
 		List<UserPojo> list = userDao.selectUser();
 		for (UserPojo userPojo : list) {
