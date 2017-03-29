@@ -1,4 +1,4 @@
-package org.my.listener;
+package org.my.service.jms.listener;
 
 import javax.jms.Message;
 import javax.jms.MessageListener;
